@@ -274,7 +274,3 @@ class MyHandler(BaseHTTPRequestHandler):
         self.send_text(json.dumps(result), "application/json")
 
 
-if __name__ == "__main__":
-    create_table()
-    print("Website is running at http://localhost:8000")
-    HTTPServer(("localhost", 8000), MyHandler).serve_forever()
